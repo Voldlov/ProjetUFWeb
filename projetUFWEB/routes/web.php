@@ -16,5 +16,6 @@ use App\Http\Controllers\Article;
 
 //page home
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
