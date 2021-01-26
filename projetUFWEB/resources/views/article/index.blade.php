@@ -11,7 +11,7 @@
 @endsection
 
 @section('content')
-    <!-- -->
+    <!-- 
     <p>Article Content</p>
 
     @if (count($data) === 1)
@@ -26,5 +26,5 @@
     @foreach ($data as $d)
         <li>{{ $d }}</li>
     @endforeach
-    </ul>
+    </ul>-->
 @endsection

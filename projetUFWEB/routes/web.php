@@ -18,3 +18,18 @@ use App\Http\Controllers\Article;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('a', function () {
+    return view('rechercheProjet');
+});
+
+Route::get('b', function () {
+    return view('article.index');
+});
+
+Route::get('c', function () {
+    return view('article.create');
+});
+
+Route::resource('article', [ArticleController::class, 'index']);
+
