@@ -31,5 +31,5 @@ Route::get('c', function () {
     return view('article.create');
 });
 
-Route::resource('article', [ArticleController::class, 'index']);
+Route::resource('article', [ArticleController::class]);
 
