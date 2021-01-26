@@ -19,3 +19,22 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('signin', function () {
+    return view('signin');
+});
+
+Route::get('login', function () {
+    return view('login');
+});
+
+Route::get('profil', function () {
+    return view('profil');
+});
+
+Route::get('recherche', function () {
+    return view('recherche');
+});
+
+Route::get('article', function () {
+    return view('article');
+});

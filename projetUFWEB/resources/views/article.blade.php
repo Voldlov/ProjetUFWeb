@@ -4,13 +4,13 @@
 <!-- Choix du titre -->
 @section('title', 'Recherche')
 
-@section('left')
+@section('top')
     <!-- le paramètre parent signifie : ne pas écraser le contenue, juste ajouter -->
     @parent
     <p>Child left</p>
 @endsection
 
-@section('content')
+@section('center')
     <!-- -->
     <p>Article Content</p>
 
@@ -27,4 +27,7 @@
         <li>{{ $d }}</li>
     @endforeach
     </ul>
+@endsection
+@section(foot)
+
 @endsection
