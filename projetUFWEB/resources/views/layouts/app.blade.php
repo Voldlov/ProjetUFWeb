@@ -29,12 +29,12 @@
         @endsection
     </section>
     <section class="map">
-        @section('map')
+        @section('center')
 
         @endsection
     </section>
     <section>  
-        @section('center')
+        @section('foot')
 
         @endsection
     </section>

@@ -16,11 +16,11 @@
     </div>
 @endsection
 
-@section('map')
-    <img src="assets/img/map.png" alt="map">
+@section('center')
+    <img src="../img/map.png" alt="map">
 @endsection
 
-@section('center')
+@section('foot')
     <!-- Mot des créateurs -->
   <section class="container">
     <div class="section">
