@@ -16,27 +16,25 @@ use App\Http\Controllers\Article;
 
 //page home
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/users', [UserController::class, 'index']);
+Route::get('signin', function () {
+    return view('signin');
+});
+
+Route::get('login', function () {
+    return view('login');
+});
+
+Route::get('profil', function () {
+    return view('profil');
+});
+
+Route::get('recherche', function () {
+    return view('recherche');
+});
 
 Route::get('article', function () {
-    return view('article.index');
+    return view('article');
 });
-
-//création d'url pour les articles suivant l'identifiant donné
-//il reste à faire l'ajout d'id par l'extérieur (avec la base de donné et le header clickable)
-//et la page html (front) à finir
-Route::get('projet/{article}', function ($articleId) {
-    return view('projet');
-    //'Article : ' . $articleId;
-})->where('article', '[0-9]+');
-
-
-//création d'url pour les utilisateurs suivant l'identifiant donné
-//il reste à faire l'ajout d'id par l'extérieur (avec la base de donné et le header clickable)
-//et la page html (front) à finir
-Route::get('user/{user}', function ($UserId) {
-    return 'Page utilisateur : ' . $UserId;
-})->where('article', '[0-9]+');

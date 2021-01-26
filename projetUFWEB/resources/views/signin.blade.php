@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 <!-- Choix du titre -->
-@section('title', 'Profil')
+@section('title', "S'enregistrer")
 
 @section('top')
 @endsection
