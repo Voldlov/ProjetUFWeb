@@ -149,17 +149,16 @@ input, textarea {
   margin-bottom: 20px;
 }
 
-.btn, button {
+/*.btn, button {
   padding: 10px 15px;
   border: none;
-  border-radius: 25px;
   background-color: #ff9800;
   color: #fff;
   font-weight: 700;
   font-size: 15px;
   cursor: pointer;
   min-width: 90px;
-}
+}*/
 
 /*project*/
 
@@ -189,4 +188,10 @@ input, textarea {
 .titre-name {
   border-bottom: 1px solid;
   padding: 5px;
+}
+
+/*panier*/
+
+.btn-panier {
+  margin-bottom: 5%;
 }
