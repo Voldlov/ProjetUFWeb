@@ -1,0 +1,153 @@
+nav ul a,
+nav .brand-logo {
+  color: #ffffff;
+}
+
+p {
+  line-height: 2rem;
+  font-size: 18px;
+}
+
+/*home*/
+
+map {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+}
+
+/*profile page*/
+
+.profile-picture {
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+.img-circle {
+  border-radius: 50%;
+  height: 10%;
+  width: 10%;
+}
+
+.heading {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.profile-info {
+  margin-bottom: 15px;
+}
+
+.profile-top {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.profile-name {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.profile-status {
+  width: auto;
+  min-width: 150px;
+}
+
+.profile-link, .profile-tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-contact {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.profile-edit {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.product {
+  border: solid 1px;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+
+/*login & incription*/
+
+.login {
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /*max-width: 350px;*/
+  flex-direction: column;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.input-row {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #795548;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.login-btn-bar, .login-switch-container {
+  text-align: center;
+}
+
+.login-btn-bar {
+  margin-bottom: 20px;
+}
+
+.btn, button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff9800;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  min-width: 90px;
+}
