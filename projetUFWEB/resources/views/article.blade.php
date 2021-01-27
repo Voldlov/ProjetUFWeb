@@ -5,29 +5,32 @@
 @section('title', 'Recherche')
 
 @section('top')
-    <!-- le paramètre parent signifie : ne pas écraser le contenue, juste ajouter -->
-    @parent
-    <p>Child left</p>
+    <h1 class="header center orange-text">Nom du Projet</h1>
+    <div class="right-align">
+        <h6>NB Dom : 382</h6>
+        <h6>Montant : 11 093€</h6>
+    </div>
 @endsection
 
 @section('center')
-    <!-- -->
-    <p>Article Content</p>
-
-    @if (count($data) === 1)
-        Un élément.
-    @elseif (count($data) > 1)
-        Plusieurs éléments.
-    @else
-        Liste vide.
-    @endif
-
-    <ul>
-    @foreach ($data as $d)
-        <li>{{ $d }}</li>
-    @endforeach
-    </ul>
+    <div>
+        <h4>Informations</h3>
+        <p>Lieu : Paris</p>
+        <p>Description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae, assumenda sapiente eius necessitatibus officia nam id consequuntur exercitationem consequatur. Ullam a harum dignissimos quasi reprehenderit eos autem modi possimus?</p>
+    </div>
 @endsection
-@section(foot)
-
+@section('foot')
+    <div>
+        <h4>Photos</h3>
+        <!--Photos-->
+        <div class="col s12 m6 l3">
+            <img class="pics" src="img/castle.png" alt="img-castle">
+        </div>
+        <div class="col s12 m6 l3">
+            <img class="pics" src="img/castle.png" alt="img-castle">
+        </div>
+        <div class="col s12 m6 l3">
+            <img class="pics" src="img/castle.png" alt="img-castle">
+        </div>
+    </div>
 @endsection

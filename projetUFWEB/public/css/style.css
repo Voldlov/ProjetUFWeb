@@ -8,6 +8,11 @@ p {
   font-size: 18px;
 }
 
+.bann-border {
+  border: solid 3px;
+  padding: 10px;
+}
+
 /*home*/
 
 map {
@@ -76,7 +81,10 @@ map {
 .product {
   border: solid 1px;
   margin: 10px;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -150,4 +158,12 @@ input, textarea {
   font-size: 15px;
   cursor: pointer;
   min-width: 90px;
+}
+
+/*project*/
+
+.pics-size{
+  border: 1px solid;
+  width: 20%;
+  height: auto;
 }
