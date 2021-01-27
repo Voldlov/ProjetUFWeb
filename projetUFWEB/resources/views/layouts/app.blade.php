@@ -23,7 +23,7 @@
             Home
         @endslot-->
     @endcomponent
-    <section class="container">
+    <section class="container bann-border">
         @section('top')
 
         @endsection
@@ -33,7 +33,7 @@
 
         @endsection
     </section>
-    <section>  
+    <section class="container">  
         @section('foot')
 
         @endsection

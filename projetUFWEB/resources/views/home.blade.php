@@ -17,12 +17,11 @@
 @endsection
 
 @section('center')
-    <img src="../img/map.png" alt="map">
+    <img src="img/map.png" alt="map">
 @endsection
 
 @section('foot')
     <!-- Mot des créateurs -->
-  <section class="container">
     <div class="section">
       <div class="row">
         <div class="col 12 center">
@@ -31,5 +30,4 @@
         </div>
       </div>
     </div>
-  </section>
 @endsection
