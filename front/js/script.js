@@ -33,3 +33,13 @@ $(document).ready(function(){
     },
   });
 });
+
+//Modal function Materialize
+$(document).ready(function(){
+  $('.modal').modal();
+});
+
+//Media function Materialize
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+});
