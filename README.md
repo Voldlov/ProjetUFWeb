@@ -8,7 +8,7 @@ Projet UF WEB avec :
 - Nicolas BARBARISI
     tâches : front (HTML, CSS, JS)
 - Lucas GAIO DOS SANTOS
-    têches : back (route, view, erreur 404)
+    têches : back (route, view, erreur 404, traduction et changement page en en fr)
 
 
 

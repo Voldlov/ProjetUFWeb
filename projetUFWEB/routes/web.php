@@ -39,3 +39,6 @@ Route::get('article', function () {
     return view('article');
 });
 
+
+Route::get('/articles', [ArticleController::class, 'index']);
+Route::get('show/{id}', "\App\Http\Controllers\ArticleController@show")->name('showArticle');
