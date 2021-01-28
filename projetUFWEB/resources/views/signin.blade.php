@@ -5,13 +5,11 @@
 @section('title', "S'enregistrer")
 
 @section('top')
-@endsection
-
-@section('center')
- <h2>Sign Up</h2>
+  <h2>Sign Up</h2>
     <div class="col s12 m10 offset-m1 l6 offset-l3">
       <div class="row">
-        <form action="signin" method="post" class="col s12 m8 offset-m2 l6 offset-l3">
+        <!--method="post" dans le form, retiré pour ne pas avoir de message d'erreur, voir fin du fichier web.php-->
+        <form action="signin"  class="col s12 m8 offset-m2 l6 offset-l3">
         @csrf 
           <div class="row">
             <div class="input-field col s12">
@@ -67,6 +65,10 @@
     <div class="login-btn-bar">
     </div>
   </div>
+@endsection
+
+@section('center')
+ 
 @endsection
 
 @section('foot')

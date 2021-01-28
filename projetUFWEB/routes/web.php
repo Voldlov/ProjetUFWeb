@@ -48,10 +48,13 @@ Route::get('panier', function () {
 Route::get('/articles', [ArticleController::class, 'index']);
 Route::get('show/{id}', "\App\Http\Controllers\ArticleController@show")->name('showArticle');
 
-Route::post('signin', function() {
+/*Route::post('signin', function() {
     $utilisateur = new User;
     $utilisateur->email = request('email');
     $utilisateur->password = bcrypt('password');
     $utilisateur->name = request('name');
     $utilisateur->save();
-});
+});*/
+//cette partie a été retiré pour ne pas faire du bug pour la présentation
+//cette partie est pour la création d'utilisateur, elle fait partie des nombreux teste fait
+//pas encore opérationnelle. 
