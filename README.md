@@ -4,6 +4,8 @@ Au vu du manque de temps pour le Projet UFWeb, nous avons vu avec notre interven
 
 # ProjetUFWeb
 
+Le changement de page se fait, pour l'instant avec les url.
+
 ## Projet UF WEB avec :
 
 - Nicolas BARBARISI
