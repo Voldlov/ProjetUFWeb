@@ -24,19 +24,13 @@
         @endslot-->
     @endcomponent
     <section class="container bann-border">
-        @section('top')
-
-        @endsection
+        @yield('top')
     </section>
     <section class="map">
-        @section('center')
-
-        @endsection
+        @yield('center')
     </section>
     <section class="container">  
-        @section('foot')
-
-        @endsection
+        @yield('foot')
     </section>
 </body>
 @component('layouts.components.footer')

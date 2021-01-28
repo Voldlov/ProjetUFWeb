@@ -23,6 +23,10 @@ Route::get('signin', function () {
     return view('signin');
 });
 
+Route::post('signin', function () {
+    return 'formulaire reçu';
+});
+
 Route::get('login', function () {
     return view('login');
 });
