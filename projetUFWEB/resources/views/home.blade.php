@@ -17,7 +17,9 @@
 @endsection
 
 @section('center')
-    <img src="img/map.png" alt="map">
+    <div class="parallax">
+      <img src="img/map.png" alt="map">
+    </div>
 @endsection
 
 @section('foot')

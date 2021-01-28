@@ -9,6 +9,7 @@ p {
 }
 
 .bann-border {
+  margin-top: 3%;
   border: solid 3px;
   padding: 10px;
 }
@@ -148,22 +149,48 @@ input, textarea {
   margin-bottom: 20px;
 }
 
-.btn, button {
+/*.btn, button {
   padding: 10px 15px;
   border: none;
-  border-radius: 25px;
   background-color: #ff9800;
   color: #fff;
   font-weight: 700;
   font-size: 15px;
   cursor: pointer;
   min-width: 90px;
-}
+}*/
 
 /*project*/
 
-.pics-size{
+.pics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.pics-size {
   border: 1px solid;
-  width: 20%;
-  height: auto;
+  /*width: 20%;
+  height: auto;*/
+}
+
+.titre {
+  border: solid 1px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titre-name {
+  border-bottom: 1px solid;
+  padding: 5px;
+}
+
+/*panier*/
+
+.btn-panier {
+  margin-bottom: 5%;
 }

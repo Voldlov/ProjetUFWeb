@@ -19,7 +19,7 @@
     <div class="footer-copyright">
       <div class="container">
       © 2021 Copyright Nicolas Barbarisi & Lucas Gaio Dos Santos - All right reserved
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      <a class="grey-text text-lighten-4 right" href="assets/download/Policy.pdf">Politique de Confidentialité</a>
       </div>
     </div>
-</footer>
+  </footer>
