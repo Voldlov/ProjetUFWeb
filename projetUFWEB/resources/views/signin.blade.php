@@ -11,22 +11,23 @@
  <h2>Sign Up</h2>
     <div class="col s12 m10 offset-m1 l6 offset-l3">
       <div class="row">
-        <form action="" class="col s12 m8 offset-m2 l6 offset-l3">
+        <form action="signin" method="post" class="col s12 m8 offset-m2 l6 offset-l3">
+        @csrf 
           <div class="row">
             <div class="input-field col s12">
-              <input id="last_name" type="text" class="validate">
+              <input id="last_name" type="text" class="validate" placeholder="Nom">
               <label for="last_name">Nom d'utilisateur</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
+              <input id="password" type="password" class="validate" placeholder="Mot de passe">
               <label for="password">Mot de passe</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
+              <input id="password" type="password" class="validate" placeholder="Mot de passe (vérification)">
               <label for="password">Confirmez le mot de passe</label>
             </div>
           </div>
@@ -55,15 +56,15 @@
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" class="validate" placeholder="Mail">
               <label for="email">Email</label>
             </div>
           </div>
           En cliquant sur s'inscrire, vous acceptez notre politique de confidentialité ainsi que nos conditions d'utilisation.
+          <input type="submit" class="btn-full" pb-role="submit" value="S'inscrire">
         </form>
     </div>
     <div class="login-btn-bar">
-      <button type="submit" class="btn-full" pb-role="submit">S'inscrire</button>
     </div>
   </div>
 @endsection
