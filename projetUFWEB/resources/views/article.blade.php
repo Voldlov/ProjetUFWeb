@@ -5,7 +5,7 @@
 @section('title', 'Recherche')
 
 @section('top')
-    <h1 class="header center orange-text">fgjdj</h1>
+    <a href="panier"><h1 class="header center orange-text">fgjdj</h1></a>
     <div class="right-align">
         <h6>NB Dom : 382</h6>
         <h6>Montant : 11 093€</h6>

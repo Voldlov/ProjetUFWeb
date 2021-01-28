@@ -40,8 +40,8 @@ Route::get('article', function () {
     return view('article');
 });
 
-Route::get('pannier', function () {
-    return view('pannier');
+Route::get('panier', function () {
+    return view('panier');
 });
 
 

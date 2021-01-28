@@ -6,7 +6,9 @@
 
 @section('top')
 @endsection
-    <h2>Log In</h2>
+@section('center')
+    
+<h2>Log In</h2>
     <form action="#" pb-autologin="true" autocomplete="off">
         <div class="input-row login-input">
             <div class="input-label">Addresse mail</div>
@@ -19,7 +21,7 @@
             <!--<div class="error">Requis !</div>-->
         </div>
         <div class="login-btn-bar">
-            <button type="submit" class="btn-full" pb-role="submit">Log In</button>
+            <button type="submit" class="btn-full" pb-role="submit" >Log In</button>
         </div>
     </form>
     <div class="login-switch-container">
@@ -27,7 +29,6 @@
         &nbsp;&nbsp;·&nbsp;&nbsp;
         <a href="#">Forgot password</a>
     </div>
-@section('center')
 @endsection
 
 @section('foot')
