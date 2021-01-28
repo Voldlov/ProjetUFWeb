@@ -5,7 +5,7 @@
 @section('title', 'Recherche')
 
 @section('top')
-    <h1 class="header center orange-text">Nom du Projet</h1>
+    <h1 class="header center orange-text">{{$name}}</h1>
     <div class="right-align">
         <h6>NB Dom : 382</h6>
         <h6>Montant : 11 093€</h6>
@@ -14,7 +14,7 @@
 
 @section('center')
     <div>
-        <h4>Informations</h3>
+        <h4>Informations</h4>
         <p>Lieu : Paris</p>
         <p>Description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae, assumenda sapiente eius necessitatibus officia nam id consequuntur exercitationem consequatur. Ullam a harum dignissimos quasi reprehenderit eos autem modi possimus?</p>
     </div>
