@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Article;
+use App\models\User as User;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,10 +24,6 @@ Route::get('signin', function () {
     return view('signin');
 });
 
-Route::post('signin', function () {
-    return 'formulaire reçu';
-});
-
 Route::get('login', function () {
     return view('login');
 });
@@ -46,3 +43,11 @@ Route::get('article', function () {
 
 Route::get('/articles', [ArticleController::class, 'index']);
 Route::get('show/{id}', "\App\Http\Controllers\ArticleController@show")->name('showArticle');
+
+Route::post('signin', function() {
+    $utilisateur = new User;
+    $utilisateur->email = request('email');
+    $utilisateur->password = bcrypt('password');
+    $utilisateur->name = request('name');
+    $utilisateur->save();
+});
