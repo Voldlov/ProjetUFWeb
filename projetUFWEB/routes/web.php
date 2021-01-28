@@ -39,10 +39,3 @@ Route::get('article', function () {
     return view('article');
 });
 
-Route::get('test-contact', function () {
-    return new App\Mail\Contact([
-      'nom' => 'GAIO DOS SANTOS',
-      'email' => 'lucas.gaildossantos@gmail.com',
-      'message' => 'ça fonctionne !'
-      ]);
-});
