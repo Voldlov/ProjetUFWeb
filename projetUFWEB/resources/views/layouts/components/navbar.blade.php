@@ -12,8 +12,8 @@
     <li><a href="#!">three</a></li>
   </ul>
   <ul id="dropdown3" class="dropdown-content">
-    <li><a href="recherche">one</a></li>
-    <li><a href="recherche">two</a></li>
+    <li><a href="article">one</a></li>
+    <li><a href="article">two</a></li>
     <li class="divider"></li>
     <li><a href="article">three</a></li>
   </ul>

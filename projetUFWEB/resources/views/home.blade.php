@@ -12,7 +12,7 @@
       <h5 class="header col s12 light">Phrase d'accroche</h5>
     </div>
     <div class="row center">
-      <a href="#" class="btn-large waves-effect waves-light orange">Je veux commencer mon aventure !</a>
+      <a href="recherche" class="btn-large waves-effect waves-light orange">Je veux commencer mon aventure !</a>
     </div>
 @endsection
 
