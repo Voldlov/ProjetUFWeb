@@ -62,7 +62,7 @@ Route::get('edit_article', function () {
 });
 
 //page index article
-Route::get('index_article', function () {
+Route::get('indexarticle', function () {
     return view('products.index');
 });
 
