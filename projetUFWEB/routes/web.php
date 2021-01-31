@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Article;
 use App\models\User as User;
+use app\http\controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,33 +21,38 @@ Route::get('/', function () {
     return view('home');
 });
 
+//page d'enregistrement
 Route::get('signin', function () {
     return view('signin');
 });
 
+//page de connexion
 Route::get('login', function () {
     return view('login');
 });
 
+//page de profil
 Route::get('profil', function () {
     return view('profil');
 });
 
+//page de recherche d'article
 Route::get('recherche', function () {
     return view('recherche');
 });
 
+//page d'article
 Route::get('article', function () {
     return view('article');
 });
 
+//page de panier
 Route::get('panier', function () {
     return view('panier');
 });
 
-
-Route::get('/articles', [ArticleController::class, 'index']);
-Route::get('show/{id}', "\App\Http\Controllers\ArticleController@show")->name('showArticle');
+//
+Route::resource('article', ArticleController::class);
 
 /*Route::post('signin', function() {
     $utilisateur = new User;
