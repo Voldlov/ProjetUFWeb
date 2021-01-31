@@ -14,7 +14,10 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $products = Product::latest()->paginate(5);
+    
+        return view('products.index',compact('products'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -24,7 +27,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
@@ -35,7 +38,15 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'detail' => 'required',
+        ]);
+    
+        Product::create($request->all());
+     
+        return redirect()->route('products')
+                        ->with('success','Product created successfully.');
     }
 
     /**
@@ -46,7 +57,7 @@ class ArticleController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        return view('products.show',compact('product'));
     }
 
     /**
@@ -57,7 +68,7 @@ class ArticleController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view('products.edit',compact('product'));
     }
 
     /**
@@ -69,7 +80,15 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'detail' => 'required',
+        ]);
+    
+        $product->update($request->all());
+    
+        return redirect()->route('products')
+                        ->with('success','Product updated successfully');
     }
 
     /**
@@ -80,6 +99,9 @@ class ArticleController extends Controller
      */
     public function destroy(Product $product)
     {
-        //
+        $product->delete();
+    
+        return redirect()->route('products')
+                        ->with('success','Product deleted successfully');
     }
 }

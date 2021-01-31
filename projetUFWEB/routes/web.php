@@ -51,6 +51,26 @@ Route::get('panier', function () {
     return view('panier');
 });
 
+//page de création d'article
+Route::get('create_article', function () {
+    return view('products.create');
+});
+
+//page de modification d'article
+Route::get('edit_article', function () {
+    return view('products.edit');
+});
+
+//page index article
+Route::get('index_article', function () {
+    return view('products.index');
+});
+
+//page de vue
+Route::get('show_article', function () {
+    return view('products.show');
+});
+
 //
 Route::resource('article', ArticleController::class);
 
